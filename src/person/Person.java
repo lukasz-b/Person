@@ -10,4 +10,9 @@ public class Person {
     private String m_email;
     private int age;
 
+    Person()
+    {
+        this.m_name = "Default";
+        this.m_email = "email@dot.com";
+    }
 }

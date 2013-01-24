@@ -35,10 +35,11 @@ public class PersonTest {
     @After
     public void afterEachTest()
     {
+        p = null;
         System.out.println( "Test " + ++counter + " completed");
     }
 
-    @Test( timeout = 1 )
+    @Test( timeout = 10 )
     public void testGetName() throws Exception
     {
         assertEquals("Default", p.getM_name());
